@@ -51,8 +51,7 @@
                             <li><a href="/institucional/nossas-lojas" title="Nossas Lojas">Nossas Lojas</a></li>
                             <li><a href="/institucional/sobre-a-edex-jeans" title="Sobre a Edex Jeans">Sobre a Edex
                                     Jeans</a></li>
-                            <li><a href="/institucional/seja-um-revendedor" title="Seja um fornecedor">Seja um
-                                    revendedor</a></li>
+                           
                             <li><a href="/institucional/fale-conosco" title="Fale conosco">Fale conosco</a></li>
                         </ul>
                     </div>
@@ -85,7 +84,7 @@
                     <h3>Formas de pagamento <i class="ico-plus"></i></h3>
                     <div class="itemContent">
                         <ul>
-                            <li><img src="/arquivos/meios-pagamento.png" /></li>
+                            <li><img src="/arquivos/meios-pagamento.png" style="width: 10em" /></li>
 
                         </ul>
                     </div>
@@ -125,7 +124,8 @@
                     <div class="itemContent">
                         <ul>
                             <li><a href="https://www.facebook.com/edexjeansoficial/" target="_blank"
-                                    title="facebook"><img src="/arquivos/fb.png" alt=""  style="width: 5.7em;"/></a></li>
+                                    title="facebook"><img src="/arquivos/fb.png" alt=""  style="width: 6em;
+    margin-right: -8px;"/></a></li>
                             <li><a href="https://twitter.com/edex_jeans" target="_blank" title="twitter"><img
                                         src="/arquivos/teot.png" alt="" style="width: 5.3em;" /></a></li>
                             <li><a href="https://www.instagram.com/edexjeans/" target="_blank" title="instagram"><img
@@ -166,3 +166,19 @@
         <vtex.cmc:formNews />
     </div>
 </div>
+
+
+<script>
+    $( document ).ready(function() {
+    $(".pageNav .navHead .welcomeMsg a#login").click(function(){
+        $(".navigation .navOverlay").removeClass("active"); 
+        $("body.isMobile .pageNav.open").removeClass("open");
+    });
+    
+    
+    $(".vtexIdUI .modal-header .close", "body").click(function(){
+	     window.location.href = "/";
+	});
+});
+    
+</script>

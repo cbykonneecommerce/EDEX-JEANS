@@ -4045,7 +4045,7 @@ body.home .kitLook a img {
     padding: 20px 0
 }
 
-.mainProductInfo .buyProduct .buyProductButton .buy-button, .mainProductInfo .buyProduct .buyProductButton .buy-in-page-button {
+.mainProductInfo .buyProduct .buyProductButton .buy-button, .mainProductInfo .buyProduct .buyProductButton .buy-in-page-button, .mainProductInfo .buyProduct .buyProductButton .buy-button#cartbtn {
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -4075,6 +4075,13 @@ body.home .kitLook a img {
     cursor: pointer;
     margin: auto;
     line-height: 1.8
+}
+
+
+.mainProductInfo .buyProduct .buyProductButton .buy-button#cartbtn {
+    color: #931a29 !important;
+    border: solid 1px #931a29 !important;
+    background:  white !important;
 }
 
 .mainProductInfo .buyProduct .buyProductButton .buy-in-page-button {
@@ -7931,6 +7938,10 @@ width: 5em;
 }
 
 
+.vtexIdUI .modal-header .close {
+    display: block !important;
+}
+
 
 .buy-in-page-quantity {
     display: none !important;
@@ -7947,10 +7958,10 @@ width: 5em;
     }
 
     .mainProductInfo .plugin-preco{
-        margin-right: 38%;
+        margin-right: 56%;
     }
     .mainProductInfo .priceProduct .price-cash {
-        margin-right: -4%;
+        margin-right: -66%;
     }
 
     .mainProductInfo .chooseProduct {

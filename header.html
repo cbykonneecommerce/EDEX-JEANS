@@ -1,0 +1,156 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPFR5BZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+<div class="mainOverlay"></div>
+<header class="pageHeader">
+	<div class="wrapper">
+		<div class="headerLeftCol"> 
+			<div class="logo">
+				<a href="/" title="Edex Jeans" class="logoImg">Edex Jeans</a>
+			</div><!--/logo-->
+
+			<div class="navigation">
+				<div class="navOverlay"></div>
+				<nav class="pageNav">
+					<div class="navHead">
+						<i class="ico-close"></i>				
+						<div class="welcomeMsg"><vtex.cmc:welcomeMessage/></div>
+						<style>
+						    li.link-mobile {
+						        padding-left: 10px;
+                                padding-right: 40px;
+                                margin-bottom: 1em;
+						    }
+						    
+						    li.link-mobile a {
+						    color: white;
+						    }
+						</style>
+							<li class="link-mobile"><a href="/institucional/sobre-a-edex-jeans" title="A Marca">A MARCA</a></li>
+					<li class="link-mobile"><a href="/institucional/nossas-lojas" title="Nossas Lojas">NOSSAS LOJAS</a></li>
+						<div class="accountMobileNav" style="display: none;">						
+							<div class="content">
+							
+								<a href="/account" title="Minha Conta">Minha Conta</a>
+								<a href="/account/orders" title="Meus Pedidos">Meus Pedidos</a>
+							</div>
+						</div>	
+					</div>
+					<vtex.cmc:departmentNavigator/>
+				</nav>
+			</div>
+		</div>
+		<div class="headerRightCol"> 
+			<div class="secondaryMenu">
+				<ul>
+				
+					<li><a href="/institucional/sobre-a-edex-jeans" title="A Marca">A Marca</a></li>
+					<li><a href="/institucional/nossas-lojas" title="Nossas Lojas">Nossas Lojas</a></li>
+					<li class="enterAccount"><a href="#" class="entrar" title="Entrar">Entrar</a>
+				
+						<div class="hideContent">
+						    <ul>
+								<li><a href="/account" title="Minha Conta">Minha Conta</a></li>
+								<li><a href="/account/orders" title="Meus Pedidos">Meus Pedidos</a></li>
+								<li> 
+									<div class="welcomeMsg">
+										<vtex.cmc:welcomeMessage/>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+						<li><a href="/institucional/seja-um-revendedor" title="Atacado">Atacado</a></li>
+				</ul>
+			</div>
+
+			<div class="toggleSearch">
+				<i class="ico-search"></i>
+			</div>
+
+			<div class="thisCart">
+				<div class="header-cart">
+					<div class="hidden">
+						<vtex.cmc:miniCart />
+					</div>
+					<div class="cart">
+			        	<div class="sta-cart"></div>
+			        </div><!-- /.cart -->
+				</div><!-- /.header-cart -->
+			</div>
+
+			<div class="menu-mobile-toggle">
+				<i class="ico-menu"></i>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="idatacado"><a href="/institucional/seja-um-revendedor">ATACADO CLIQUE AQUI</a></div>
+	<style>
+	#idatacado {
+	background-color: #13151c;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	text-align: center;
+	
+	}
+	
+	#idatacado a {
+	color: white;
+	
+	}
+	@media (min-width: 500px) {
+	#idatacado {
+	display:none;
+	    }
+	}
+	    
+	</style>
+</header>
+<div class="searchBox">
+	<div class="wrapper"> 					
+		<vtex.cmc:fullTextSearchBox/>
+		<div class="action"> 
+			<a href="#">fechar <i class="ico-close"></i></a>
+		</div>
+	</div>
+</div><!-- /searchBox -->
+
+
+
+
+<script>
+$( document ).ready(function() {
+    $(".pageNav .navHead .welcomeMsg a#login").click(function(){
+        $(".navigation .navOverlay").removeClass("active"); 
+        $("body.isMobile .pageNav").removeClass("open");
+    });
+});
+    setTimeout(function() {
+        $(".pageNav .navHead .welcomeMsg a#login").click(function(){
+        $(".navigation .navOverlay").removeClass("active"); 
+        $("body.isMobile .pageNav").removeClass("open");
+    });
+    }, 1000);
+    
+    
+    $(".pageHeader .secondaryMenu ul .enterAccount").mouseenter(function(){
+    $(".hideContent").show();
+    });
+    $(".pageHeader .secondaryMenu ul .enterAccount").mouseleave(function(){
+    $(".hideContent").hide();
+    });
+    
+    
+      setTimeout(function() {
+       $(".vtexIdUI .modal-header .close", "body").click(function(){
+	     window.location.href = "/";
+	});
+    }, 1000);
+	
+   
+</script>

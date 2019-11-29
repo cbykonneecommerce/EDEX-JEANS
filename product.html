@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags />
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <vtex:template id="commonHead" />
+    <link rel="stylesheet" href="/arquivos/jquery-modal.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <div class="all">
+        <vtex:template id="header" />
+
+        <div id="mainContent">
+            <div class="wrapper">
+                <vtex.cmc:breadCrumb />
+                <div class="mainProduct">
+                    <section class="mainProductImage">
+                        <vtex.cmc:ProductImage zoom="on" />
+                    </section>
+                    <!--/mainProductImage -->
+
+                    <section class="mainProductInfo">
+                        <h1 class="productTitle">
+                            <vtex.cmc:productName />
+                        </h1>
+                        <h6 class="productRef">ref:
+                            <vtex.cmc:productReference />
+                        </h6>
+
+                        <div class="priceProduct">
+                            <vtex.cmc:skuPrice />
+                        </div>
+
+                        <div class="chooseProduct">
+                            <vtex.cmc:skuSelection />
+                        </div>
+
+                        <div class="ruleModalLink">
+                            <a class="ruleGuide" href="#ruleGuide" rel="modal:open"><i class="ico-rule"></i>
+                                <span>Tabela de Medidas</span></a>
+                        </div>
+
+                        <div class="buyProduct">
+                            <div class="buyProductButton">
+                                <vtex.cmc:BuyButton />
+                            </div>
+                            <div class="buyProductButton">
+                                <vtex.cmc:BuyInPage />
+                            </div>
+
+                        </div>
+
+                        <div class="similar">
+                            <vtex:contentPlaceHolder id="Similares" />
+                        </div>
+
+                        <div class="accordionMobile">
+                            <div class="accordionItem">
+                                <h3><span>Descrição</span> <i class="ico-plus"></i></h3>
+                                <div class="itemContent">
+                                    <vtex.cmc:ProductDescription />
+                                    <vtex.cmc:productSpecification />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="share" class="shareProduct">
+                            <h3>Compartilhe</h3>
+                            <ul>
+                                <li><a class="facebook" target="_blank" href=""><i
+                                            class="ico-facebook"></i><span>facebook</span></a></li>
+                                <li><a class="twitter" target="_blank" href=""><i
+                                            class="ico-twitter"></i><span>twitter</span></a></li>
+                                <li><a class="gplus" target="_blank" href=""><i
+                                            class="ico-google"></i><span>google+</span></a></li>
+                                <li><a class="pinterest" target="_blank" href=""><i
+                                            class="ico-pinterest"></i><span>pinterest</span></a></li>
+                            </ul>
+                        </div>
+                    </section><!-- /mainProductInfo-->
+                </div><!-- /mainProduct -->
+
+                <section class="productBuyTogether" style="display:none">
+                    <vtex.cmc:BuyTogether />
+                </section>
+
+                <section class="productEvaluation">
+                    <vtex.cmc:UserReview />
+                </section>
+
+                <section class="productComplementary shelfCarousel">
+                    <vtex:contentPlaceHolder id="Produtos complementares" />
+                </section><!-- productComplementary -->
+            </div>
+
+        </div><!-- /mainContent-->
+
+        <vtex:template id="footer" />
+
+        <div id="ruleGuide" class="modal" style="display:none;">
+            <vtex:contentPlaceHolder id="Tabela de Medidas" />
+        </div>
+    </div>
+    <!--/all-->
+
+    <script src="/arquivos/jquery-modal.min.js" type="text/javascript"></script>
+    <script>
+        console.log("aaaaaaaaaaaaa")
+        $(".buy-in-page-button").click(function (e) {
+            e.preventDefault();
+            var newhref = $(".buy-in-page-button").attr("href");
+            newhref = newhref.replace("false", "true");
+            window.location.href = newhref
+        });
+    </script>
+    <vtex:template id="commonBottom" />
+</body>
+
+</html>
