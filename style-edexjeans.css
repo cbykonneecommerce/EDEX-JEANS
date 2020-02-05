@@ -945,7 +945,8 @@ body.notMobile .mainFooter .itemContent ul {
     vertical-align: middle;
     font-size: 0;
     padding: 0;
-    margin-right: 45px
+    margin-right: 45px;
+    margin-top: 10px
 }
 
 .pageHeader .logo a {
@@ -977,8 +978,8 @@ body.notMobile .mainFooter .itemContent ul {
     float: left;
     display: block;
     margin-right: .5820721769%;
-    width: 62.2817229336%;
-    margin-left: 20.9545983702%
+    width: 68%;
+    margin-left: 12%
 }
 
 .pageHeader .secondaryMenu:last-child {
@@ -3850,13 +3851,13 @@ body.home .kitLook a img {
     margin-bottom: 20px;
     color: #414141;
     font-size: 1.125rem;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase
 }
 
 .mainProductInfo .productRef {
     color: #414141;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-size: .75rem;
     display: block;
@@ -3874,7 +3875,7 @@ body.home .kitLook a img {
 
 .mainProductInfo .priceProduct .descricao-preco {
     color: #414141;
-    text-align: center;
+    text-align: left;
     text-transform: lowercase
 }
 
@@ -3899,7 +3900,7 @@ body.home .kitLook a img {
 }
 
 .mainProductInfo .priceProduct .descricao-preco .valor-dividido {
-    display: none!important;
+    
     color: #a9091d;
     font-size: 15px
 }
@@ -3919,7 +3920,7 @@ body.home .kitLook a img {
     margin-top: 15px;
     color: #414141;
     font-size: .75rem;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase
 }
 
@@ -3928,7 +3929,8 @@ body.home .kitLook a img {
 }
 
 .mainProductInfo .chooseProduct .sku-selector-container .topic {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    margin-top: 2em;
 }
 
 .mainProductInfo .chooseProduct .sku-selector-container .topic .specification {
@@ -4086,10 +4088,12 @@ body.home .kitLook a img {
 
 .mainProductInfo .buyProduct .buyProductButton .buy-in-page-button {
     margin-top: 2em;
+    background: limegreen !important
 }
 .mainProductInfo .buyProduct .buyProductButton .buy-button:hover {
     background: #a9091d;
-    text-decoration: none
+    text-decoration: none;
+    background: limegreen !important
 }
 
 .mainProductInfo .accordionMobile {
@@ -7825,6 +7829,10 @@ body.dealer #mainContent .wrapper form#revendedor .warapperForm .form-group-4:la
     body.dealer #mainContent .wrapper form#revendedor .warapperForm .form-group-4:last-child, body.dealer #mainContent .ui-autocomplete>li form#revendedor .warapperForm .form-group-4:last-child, body.dealer #mainContent .ui-autocomplete .product-found form#revendedor .warapperForm .form-group-4:last-child, .ui-autocomplete body.dealer #mainContent .product-found form#revendedor .warapperForm .form-group-4:last-child, body.dealer #mainContent .wrapper form#fale-conosco .warapperForm .form-group-4:last-child, body.dealer #mainContent .ui-autocomplete>li form#fale-conosco .warapperForm .form-group-4:last-child, body.dealer #mainContent .ui-autocomplete .product-found form#fale-conosco .warapperForm .form-group-4:last-child, .ui-autocomplete body.dealer #mainContent .product-found form#fale-conosco .warapperForm .form-group-4:last-child, body.institutional #mainContent .wrapper form#revendedor .warapperForm .form-group-4:last-child, body.institutional #mainContent .ui-autocomplete>li form#revendedor .warapperForm .form-group-4:last-child, body.institutional #mainContent .ui-autocomplete .product-found form#revendedor .warapperForm .form-group-4:last-child, .ui-autocomplete body.institutional #mainContent .product-found form#revendedor .warapperForm .form-group-4:last-child, body.institutional #mainContent .wrapper form#fale-conosco .warapperForm .form-group-4:last-child, body.institutional #mainContent .ui-autocomplete>li form#fale-conosco .warapperForm .form-group-4:last-child, body.institutional #mainContent .ui-autocomplete .product-found form#fale-conosco .warapperForm .form-group-4:last-child, .ui-autocomplete body.institutional #mainContent .product-found form#fale-conosco .warapperForm .form-group-4:last-child {
         margin-right: 0
     }
+
+    body.home .mosaico {
+        display: none;
+    }
 }
 
 body.dealer #mainContent .wrapper form#revendedor .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.dealer #mainContent .ui-autocomplete>li form#revendedor .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.dealer #mainContent .ui-autocomplete .product-found form#revendedor .warapperForm .form-group-4 [type="checkbox"]:not(:checked), .ui-autocomplete body.dealer #mainContent .product-found form#revendedor .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.dealer #mainContent .wrapper form#revendedor .warapperForm .form-group-4 [type="checkbox"]:checked, body.dealer #mainContent .ui-autocomplete>li form#revendedor .warapperForm .form-group-4 [type="checkbox"]:checked, body.dealer #mainContent .ui-autocomplete .product-found form#revendedor .warapperForm .form-group-4 [type="checkbox"]:checked, .ui-autocomplete body.dealer #mainContent .product-found form#revendedor .warapperForm .form-group-4 [type="checkbox"]:checked, body.dealer #mainContent .wrapper form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.dealer #mainContent .ui-autocomplete>li form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.dealer #mainContent .ui-autocomplete .product-found form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:not(:checked), .ui-autocomplete body.dealer #mainContent .product-found form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.dealer #mainContent .wrapper form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:checked, body.dealer #mainContent .ui-autocomplete>li form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:checked, body.dealer #mainContent .ui-autocomplete .product-found form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:checked, .ui-autocomplete body.dealer #mainContent .product-found form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:checked, body.institutional #mainContent .wrapper form#revendedor .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.institutional #mainContent .ui-autocomplete>li form#revendedor .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.institutional #mainContent .ui-autocomplete .product-found form#revendedor .warapperForm .form-group-4 [type="checkbox"]:not(:checked), .ui-autocomplete body.institutional #mainContent .product-found form#revendedor .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.institutional #mainContent .wrapper form#revendedor .warapperForm .form-group-4 [type="checkbox"]:checked, body.institutional #mainContent .ui-autocomplete>li form#revendedor .warapperForm .form-group-4 [type="checkbox"]:checked, body.institutional #mainContent .ui-autocomplete .product-found form#revendedor .warapperForm .form-group-4 [type="checkbox"]:checked, .ui-autocomplete body.institutional #mainContent .product-found form#revendedor .warapperForm .form-group-4 [type="checkbox"]:checked, body.institutional #mainContent .wrapper form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.institutional #mainContent .ui-autocomplete>li form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.institutional #mainContent .ui-autocomplete .product-found form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:not(:checked), .ui-autocomplete body.institutional #mainContent .product-found form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:not(:checked), body.institutional #mainContent .wrapper form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:checked, body.institutional #mainContent .ui-autocomplete>li form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:checked, body.institutional #mainContent .ui-autocomplete .product-found form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:checked, .ui-autocomplete body.institutional #mainContent .product-found form#fale-conosco .warapperForm .form-group-4 [type="checkbox"]:checked {
@@ -7953,7 +7961,7 @@ width: 5em;
     }
 
 
-    .mainProductInfo .productRef {
+    /*.mainProductInfo .productRef {
         margin-right: 73%;
     }
 
@@ -7965,7 +7973,7 @@ width: 5em;
     }
 
     .mainProductInfo .chooseProduct {
-        /*margin-right: 83%;*/
+        /*margin-right: 83%;
     }
 
     .mainProductInfo .ruleModalLink {
@@ -7973,7 +7981,7 @@ width: 5em;
     } 
     .mainProductInfo .buyProduct {
         margin-right: 13%;
-    }
+    }*/
 
 
 
@@ -7989,7 +7997,7 @@ width: 5em;
 }
 
 
-@media screen and (min-width:1600px) {
+/*@media screen and (min-width:1600px) {
     .mainProductInfo .productRef {
         margin-right: 77%;
     }
@@ -7999,7 +8007,7 @@ width: 5em;
     }
 
     .mainProductInfo .chooseProduct {
-       /*margin-right: 83%;*/
+       /*margin-right: 83%;
     }
 
     .mainProductInfo .ruleModalLink {
@@ -8011,4 +8019,23 @@ width: 5em;
 
     
 
+}*/
+
+
+
+@media screen and (max-width:700px) {
+
+    .productList[id^=ResultItems] .shelf ul li {
+        width: 100% !important;
+        text-align: center;
+    
+    }
 }
+
+
+.pageNav .menu-departamento>h3.outlet a{
+    color: #f11a1a;
+}
+
+
+

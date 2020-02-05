@@ -265,9 +265,9 @@ slider = {
             dots: !0,
             arrows: !0,
             pauseOnHover: !1,
-            autoplay: true,
-            speed: 2000,
-            autoplaySpeed: 2000,
+            autoplay: !0,
+            speed: 1e3,
+            autoplaySpeed: 5e3,
             responsive: [{
                 breakpoint: 720,
                 settings: {
@@ -290,8 +290,8 @@ slider = {
             dots: dots,
             arrows: arrows,
             pauseOnHover: !1,
-            autoplay: true,
-            autoplaySpeed: 2000
+            autoplay: !1,
+            autoplaySpeed: 4e3
         }), $(".mainGallery .slick-dots li").each(function(i) {
             $(this).find("button").text(arrayDots[i])
         })
@@ -301,8 +301,8 @@ slider = {
             dots: dots,
             arrows: arrows,
             pauseOnHover: !1,
-            autoplay: true,
-            autoplaySpeed: 2000
+            autoplay: !0,
+            autoplaySpeed: 4e3
         })
     },
     shelfSlider: function(dots, arrows, toShowInitial, toScrollInitial, toShow_T, toScroll_T, toShow_M, toScroll_M) {
@@ -313,19 +313,19 @@ slider = {
                 slidesToShow: toShowInitial,
                 slidesToScroll: toScrollInitial,
                 pauseOnHover: !1,
-                autoplay: true,
-                autoplaySpeed: 5000,
+                autoplay: !1,
+                autoplaySpeed: 6e3,
                 responsive: [{
                     breakpoint: 1024,
                     settings: {
-                        autoplay: true,
+                        autoplay: !0,
                         slidesToShow: toShow_T,
                         slidesToScroll: toScroll_T
                     }
                 }, {
                     breakpoint: 720,
                     settings: {
-                        autoplay: true,
+                        autoplay: !0,
                         slidesToShow: toShow_M,
                         slidesToScroll: toScroll_M,
                         dots: !0,
@@ -343,8 +343,8 @@ slider = {
                 slidesToShow: toShowInitial,
                 slidesToScroll: toScrollInitial,
                 pauseOnHover: !1,
-                autoplay: true,
-                autoplaySpeed: 5000,
+                autoplay: !1,
+                autoplaySpeed: 6e3,
                 responsive: [{
                     breakpoint: 1024,
                     settings: {
@@ -859,7 +859,7 @@ revendedor = {
                 };
             e.preventDefault(), $.ajax({
                 type: "POST",
-                url: "https://www.edexjeans.com.br/api/dataentities/RV/documents/"/*"https://edexjeans.myvtex.com/api/dataentities/RV/documents/  "*/,
+                url: "https://api.vtexcrm.com.br/edexjeans/dataentities/RV/documents/",
                 async: !0,
                 dataType: "json",
                 data: JSON.stringify(jsonData),
@@ -924,7 +924,7 @@ faleConosco = {
 };
 $(document).ready(function() {
 $(".helperComplement").remove(), global.init(), $("body").hasClass("home") && (home.init(), $(window).load(function() {
-    slider.fullSlider(), slider.shelfSlider(!1, !0, 6, 6, 4, 4, 1, 1), $(".countSlider").countSlider(!1, !0, !0, 1, 1, 1, 1, 1, 1)
+    slider.fullSlider(), slider.shelfSlider(!1, !0, 6, 6, 4, 4, 2, 2), $(".countSlider").countSlider(!1, !0, !0, 1, 1, 1, 1, 1, 1)
 })), $("body").hasClass("product") && (! function(o) {
     var t = {
         url: !1,
@@ -1008,9 +1008,9 @@ $(".helperComplement").remove(), global.init(), $("body").hasClass("home") && (h
         })
     }, o.fn.zoom.defaults = t
 }(window.jQuery), product.init(), $(window).load(function() {
-    product.doubleZoom(), slider.shelfSlider(!1, !0, 6, 6, 4, 4, 1, 1), slider.shelfSimilar(!1, !0, 3, 3, 4, 4, 2, 2)
+    product.doubleZoom(), slider.shelfSlider(!1, !0, 6, 6, 4, 4, 2, 2), slider.shelfSimilar(!1, !0, 3, 3, 4, 4, 2, 2)
 })), $("body").hasClass("kit") && kit.init(), $("body").hasClass("catalog") && catalog.init(), $("body").hasClass("emptySearch") && (catalog.emptySearch(), $(window).load(function() {
-    slider.shelfSlider(!1, !0, 6, 6, 4, 4, 1, 1)
+    slider.shelfSlider(!1, !0, 6, 6, 4, 4, 2, 2)
 })), $("body").hasClass("institutional") && institutional.init(), $("body").hasClass("stores") && stores.init(), $("body").hasClass("account") && account.init(), $("body").hasClass("dealer") && revendedor.init(), $("body").hasClass("fale-conosco") && faleConosco.init()
 }), $(window).load(function() {
 $(window).resize(function() {
@@ -1028,15 +1028,15 @@ function countPages() {
 var that = $(this);
 $(this).slick({
     infinite: !0,
-    autoplay: true,
+    autoplay: play,
     centerMode: !1,
     dots: dots,
     arrows: arrows,
     slidesToShow: toShowInitial,
     slidesToScroll: toScrollInitial,
     vertical: !1,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 1e3,
+    autoplaySpeed: 5e3,
     dotsClass: "custom_paging",
     customPaging: function(slider, i) {
         return i + 1
